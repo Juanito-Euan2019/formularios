@@ -1,5 +1,3 @@
-@extends('layouts.app')
-@section('content')
 
 {{$Modo=='crear'?'Agregar empleado':'Modificar empleado'}}
 
@@ -31,6 +29,7 @@ value="{{isset($empleado->ApellidoMaterno)?$empleado->ApellidoMaterno:''}}"
 value="{{isset($empleado->Correo)?$empleado->Correo:''}}"
 >
 </div>
+
 <div class="form-group">
 <label for="Foto" class="label">{{'Foto'}}</label>
 @if(isset($empleado->Foto))
@@ -44,4 +43,3 @@ value="{{isset($empleado->Correo)?$empleado->Correo:''}}"
 <input type="submit" class="button is-success" value="{{$Modo=='crear'?'Agregar empleado':'Modificar empleado'}}">
 
 <a class="button is-primary" href="{{url('empleados')}}">Regresar</a>
-@stop

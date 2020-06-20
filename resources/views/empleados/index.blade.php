@@ -2,6 +2,7 @@
 @extends('layouts.app')
 @section('content')
 
+
 @if(Session::has('Mensaje')){{
     Session::get('Mensaje')
 }}

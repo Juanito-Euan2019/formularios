@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
+<div class="container">
+
 seccion para editar empleados
 <form action="{{url('/empleados/'.$empleado->id)}}" method="post" enctype="multipart/form-data">
     {{ csrf_field() }}
@@ -10,4 +12,5 @@ seccion para editar empleados
 
 
 </form>
+</div>
 @stop
