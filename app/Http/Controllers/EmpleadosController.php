@@ -40,6 +40,17 @@ class EmpleadosController extends Controller
     public function store(Request $request)
     {
         //
+            //$campos=[
+                //'Nombre'=> 'string|max:100',
+                //'ApellidoPaterno'=> 'string|max:100',
+                //'ApellidoMaterno'=> 'string|max:100',
+                //'Correo'=> 'email',
+                //'Foto'=>'max:10000|mimes:jpeg,png,jpg'
+            //];
+            //$Mensaje=["required" => 'El :atribute es requerido'];
+
+            //$this->validate($request,$campos,$Mensaje);
+
         //$datosEmpleado=request()->all();
 
         $datosEmpleado=request()->except('_token');
